@@ -1,39 +1,32 @@
 ![General Assembly Logo](http://i.imgur.com/ke8USTq.png)
 
-# Assignment Name (Ruby String Lab)
+# Ruby Lab: Dice Class
 
 ## Objectives
 
 By the end of this, students should be able to:
 
-- Objective 1
-- Objective 2
-- Objective 3
+- Use Test Driven Development (TDD) to write tests and a class to solve a problem
 
 ## Instructions
 
-Include explict step-by-step instructions about the goals of the assignment, and how to run the code.
+- Fork and clone this repo.
+- In `spec/dice_spec.rb`, write tests that will reflect the requirements below for a Dice class.
+- Then in `lib/dice.rb`, write a Dice class to implement the tests.
+- Do a pull request to turn in your work
 
-Make sure to wrap section of code in appropriate markdown like `ls -al`, and denote the language as below for longer sections:
+### Dice Requirements
 
-```ruby
-x = 2
-y = 3
-puts x + y
-```
+- There should be a Dice class
+- When I create a new instance of Dice, I should be able to optionally tell it how many sides the die will have. By default, the die will have *six* sides.
+- The roll method should return a random number between 1 and the number of sides the die has.
 
-## Bonus (Optional Section)
+**FIXME**: Testing the randomness of the dice is a little tricky. I would use the `be_between` matcher, like `expect(die.roll).to be_between(1, maximum).inclusive` to test it.
 
-If you're looking for extra challenge or practice once you've completed the above, try to...
+![Gaming Dice](http://bzorch.ca/pics/dice.jpg)
 
-## Notes
+#### Notes:
 
-Gotcha's and extra information
+We are fully aware that 'dice' is plural, and 'die' is singular, we normally use the singular form of a word for class names, but writing a Die class sounded morbid.
 
-## Additional Resources
-
-List additional related resources such as videos, blog posts and official documentation.
-
-- Item 1
-- Item 2
-- Item 3
+Frequently gaming dice have 4, 6, 8, 10, 12 or 20 sides.
